@@ -1,0 +1,8 @@
+#Biosppy
+
+```
+error:
+ufunc 'multiply' did not contain a loop with signature matching types (dtype('<U12'), dtype('<U12')) -> dtype('<U12')
+solution:
+U32是长度为32个字节的无符号整数类型，需要转换为float格式
+```
