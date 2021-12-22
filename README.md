@@ -19,7 +19,6 @@ loss or tensor为nan
 ```
 solution:
 normalization的时候给std加一个非常小的余项。比如：std + 0.01，避免数据中出现0，导致除以0出现nan
-``` 
 
 # Matplot
 
