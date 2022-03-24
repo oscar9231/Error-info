@@ -1,3 +1,15 @@
+# decomposition.PCA
+
+error:
+```
+Input contains NaN, infinity or a value too large for dtype('float64')
+```
+solution:
+```
+1. 检查序列中是否有NaN值: print(np.isnan(spt_A).any())
+2. 多半由于对0进行了处理, 所以想办法去掉0
+```
+
 # Biosppy
 
 error:
