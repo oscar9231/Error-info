@@ -1,3 +1,15 @@
+# librosa
+
+error:
+```
+pyin function generates nan in f0
+```
+solution:
+```
+改用yin function，因为pyin会对unvoiced部分pad nan
+```
+
+
 # decomposition.PCA
 
 error:
