@@ -20,6 +20,15 @@ solution:
 改用yin function，因为pyin会对unvoiced部分pad nan
 ```
 
+error:
+```
+Could not find a `llvm-config` binary
+```
+solution:
+```
+pip install --upgrade pip 升级pip
+```
+
 
 # decomposition.PCA
 
