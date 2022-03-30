@@ -1,3 +1,14 @@
+# GPU server
+
+error:
+```
+pip install package no permission
+```
+solution:
+```
+pip install --user package to install on home directory
+```
+
 # librosa
 
 error:
