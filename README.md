@@ -9,6 +9,15 @@ solution:
 pip install --user package, to install on home directory
 ```
 
+error:
+```
+/lib64/libm.so.6: version `GLIBC_2.27' not found```
+solution:
+```
+使用新的libm.so.6文件，重定位。
+然后export LD_LIBRARY_PATH=$HOME/Documents/libm:$LD_LIBRARY_PATH
+```
+
 # librosa
 
 error:
