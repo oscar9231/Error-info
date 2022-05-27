@@ -99,3 +99,15 @@ solution:
 ```
 升级matplot
 ```
+
+# T-SNE
+
+error:
+```
+fit.transform时报错：TypeError: delayed() got an unexpected keyword argument 'check_pickle'
+```
+solution:
+```
+降级pip install joblib==0.17.0
+https://github.com/scikit-learn-contrib/hdbscan/pull/438
+```
