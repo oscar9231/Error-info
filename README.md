@@ -4,12 +4,21 @@ error:
 ```
 ERROR: Could not build wheels for psutil, which is required to install pyproject.toml-based projects
 when doing "pip3 install notebook"
-
+```
 ```
 solution:
 ```
 First, pip3 install wheel
 Then, pip3 install --upgrade setuptools
+```
+
+error:
+```
+内核版本不对
+```
+solution:
+```
+https://blog.csdn.net/gdkyxy2013/article/details/88539171
 ```
 
 # GPU server
