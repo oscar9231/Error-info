@@ -1,3 +1,17 @@
+# Python
+
+error:
+```
+ERROR: Could not build wheels for psutil, which is required to install pyproject.toml-based projects
+when doing "pip3 install notebook"
+
+```
+solution:
+```
+First, pip3 install wheel
+Then, pip3 install --upgrade setuptools
+```
+
 # GPU server
 
 error:
