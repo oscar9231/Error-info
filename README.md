@@ -15,7 +15,9 @@ error:
 ```
 内核版本不对
 ```
-solution:https://blog.csdn.net/gdkyxy2013/article/details/88539171
+solution:
+```
+https://blog.csdn.net/gdkyxy2013/article/details/88539171
 ```
 
 # GPU server
