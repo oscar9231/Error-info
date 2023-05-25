@@ -1,3 +1,15 @@
+# Transformer
+
+error:
+```
+ERROR: cannot import name 'AdapterType'
+```
+solution:
+```
+pip install adapter-transformers
+```
+
+
 # Python
 
 error:
