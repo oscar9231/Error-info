@@ -1,3 +1,32 @@
+# Llama
+
+error when setting 4bit or 8bit=True after pip install bitsandbytes:
+```
+AttributeError: 'NoneType' object has no attribute 'cquantize_blockwise_fp16_fp4'
+```
+solution:
+```
+1. pip install accelerate
+2. conda install cudatoolkit -- make sure it is installed in the env you are using.
+3. cd ....../site-packages/bitsandbytes -- where the bitsandbytes is installed
+4. cp libbitsandbytes_cuda122.so libbitsandbytes_cpu.so -- replace the _cpu.so with the cuda.so of your current cuda version. Then delete all cuda.so files with higher version. e.g., if your cuda version is 12.2, then delete 12.3, 12.4, etc.
+5. export LD_LIBRARY_PATH="/afs/inf.ed.ac.uk/user/s20/s2057508/miniconda3/envs/yuanchao/lib:$LD_LIBRARY_PATH" in ~/.bashrc -- modiy the path to your own env path.
+6. pip uninstall torchvision torch
+7. pip install torchvision torch
+```
+references:
+```
+https://huggingface.co/anon8231489123/vicuna-13b-GPTQ-4bit-128g/discussions/11
+https://blog.csdn.net/weixin_40959890/article/details/130064103
+https://blog.csdn.net/GXG_boss6/article/details/138379394
+https://github.com/TimDettmers/bitsandbytes/issues/156
+https://github.com/pyg-team/pytorch_geometric/issues/2040
+https://github.com/TimDettmers/bitsandbytes/issues/914
+https://github.com/TimDettmers/bitsandbytes/issues/1093
+https://stackoverflow.com/questions/13428910/how-to-set-the-environment-variable-ld-library-path-in-linux
+https://www.reddit.com/r/StableDiffusion/comments/16tny9z/kohyass_error_latest_ubuntu/
+```
+
 # Transformer
 
 error:
